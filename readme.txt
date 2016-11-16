@@ -8,5 +8,6 @@ git diff 查看了没有commit的部分与之前文件的不同之处
 git log  查看从近到远的历史修改日志 
 参数 --pretty=oneline
 
+try default
  
 
