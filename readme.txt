@@ -8,6 +8,10 @@ git diff 查看了没有commit的部分与之前文件的不同之处
 git log  查看从近到远的历史修改日志 
 参数 --pretty=oneline
 
-try default
- 
+git reset --hard HEAD^       回滚到上一版本 
+git reset --hard 2f40632fb1942badd6a31a976  也可以
+
+HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。
+穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。
+要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本 
 
