@@ -121,6 +121,10 @@ git checkout -b dev origin/dev  远程只能clone master库，然后自己建立
 
 
 
+标签管理：
+    git tag v1.0    默认和最近的一个commitid绑定
+    git tag v1.1 commitID
+    git show v0.9   展示tag信息
 
 
 
