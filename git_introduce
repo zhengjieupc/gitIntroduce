@@ -56,6 +56,6 @@ git branch -d dev 删除分支
 
 
 解决冲突
-
+主要还是在出现冲突的时候手动修改文件然后add commit 来解决冲突  然后出现的log是commit (merge)
 
 
