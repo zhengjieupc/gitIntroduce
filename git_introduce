@@ -67,3 +67,6 @@ git merge --no-ff -m 'merge 并commit with No fast forward' dev
 
 
 
+测试ff分支能不能看出来
+
+
