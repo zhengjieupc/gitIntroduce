@@ -65,8 +65,7 @@ git branch -d dev 删除分支
 合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。
 git merge --no-ff -m 'merge 并commit with No fast forward' dev
 
-
-
-测试ff分支能不能看出来
-
+bug分支处理（属于紧急分支处理,一般建立在master）
+用git status查看工作区，就是干净的（除非有没有被Git管理的文件），因此可以放心地创建分支来修复bug。
+首先确定要在哪个分支上修复bug，假定需要在master分支上修复，就从master创建临时分支：
 
