@@ -48,6 +48,12 @@ git branch 查看分支
 git merge dev 将dev分支合并到目前的分支
 
 
-
-
 git branch -d dev 删除分支
+
+
+
+解决冲突
+
+
+
+测试1分支的冲突
