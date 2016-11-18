@@ -7,6 +7,7 @@ git diff 查看了没有commit的部分与之前文件的不同之处
 
 git log  查看从近到远的历史修改日志 
 参数 --pretty=oneline
+git log --graph --pretty=oneline --abbrev-commit
 
 git reset --hard HEAD^       回滚到上一版本 
 git reset --hard 2f40632fb1942badd6a31a976  也可以
@@ -60,9 +61,9 @@ git branch -d dev 删除分支
 
 
 分支冲突管理策略
-
-
-
+合并分支时，如果可能，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息
+合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。
+git merge --no-ff -m 'merge 并commit with No fast forward' dev
 
 
 
